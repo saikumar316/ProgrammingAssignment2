@@ -1,15 +1,12 @@
 makeCacheMatrix <- function(x = matrix())
 {   
-	## Creating a makeCacheMatrix object will consist of
-	## four functions encapsulated in a list     
-m <- NULL  ## Initially set to NULL  
-## Changes when the user sets the value    
+	m <- NULL  ## Initially set to NULL  
 set <- function(y)	## Sets the matrix itself but not the inverse 
 {                
 x <<- y                
 m <<- NULL       
 }        
-get <- function() x ##get function ## Gets the matrix itself but not the inverse
+get <- function() x
 
 setmatrix <- function(solve) m <<- solve        
 getmatrix <- function() m
